@@ -8,8 +8,8 @@ import android.widget.TextView
 class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val view = TextView(this)
-        view.setText("Cesta de frutas")
-        setContentView(view)
+//        val view = TextView(this)
+//        view.setText("Cesta de frutas")
+        setContentView(R.layout.activity_main)
     }
 }
