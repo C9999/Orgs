@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         tools:text="Salada de frutas"
-        android:text="Cesta de frutas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 <!--        tools:layout_editor_absoluteX="parent"-->
@@ -21,7 +20,7 @@
         android:id="@+id/descricao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Laranja, manga e uva"
+        tools:text="Laranja, manga e uva"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +30,7 @@
         android:id="@+id/valor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="19.99"
+        tools:text="19.99"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintStart_toStartOf="parent"
