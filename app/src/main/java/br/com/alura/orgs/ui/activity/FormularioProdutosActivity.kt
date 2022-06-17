@@ -13,8 +13,8 @@ import br.com.alura.orgs.model.Produto
 import java.math.BigDecimal
 
 class FormularioProdutosActivity : AppCompatActivity(R.layout.activity_formulario_produtos) {
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
         val botaoSalvar = findViewById<Button>(R.id.botao_salvar)
         botaoSalvar.setOnClickListener {
@@ -25,7 +25,7 @@ class FormularioProdutosActivity : AppCompatActivity(R.layout.activity_formulari
             val descricao = campoDescricao.text.toString()
 
             val campoValor = findViewById<EditText>(R.id.valor)
-            val valorEmTexto = campoValor.toString()
+            val valorEmTexto = campoValor.text.toString()
 
             val valor = if(valorEmTexto.isBlank()){
                 BigDecimal.ZERO
