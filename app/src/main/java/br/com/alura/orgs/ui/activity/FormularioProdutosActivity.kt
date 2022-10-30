@@ -32,10 +32,10 @@ class FormularioProdutosActivity : AppCompatActivity() {
     }
 
     private fun criaProduto(): Produto {
-        val campoNome = binding.actitivityFormularioProdutoNome
+        val campoNome = binding.activityFormularioProdutoNome
         val nome = campoNome.text.toString()
 
-        val campoDescricao = binding.actitivityFormularioProdutoDescricao
+        val campoDescricao = binding.activityFormularioProdutoDescricao
         val descricao = campoDescricao.text.toString()
 
         val campoValor = binding.actitivityFormularioProdutoValor
