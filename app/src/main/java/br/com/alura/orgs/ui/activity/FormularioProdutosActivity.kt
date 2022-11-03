@@ -3,6 +3,7 @@ package br.com.alura.orgs.ui.activity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import br.com.alura.orgs.R
 import br.com.alura.orgs.dao.ProdutosDao
@@ -19,6 +20,18 @@ class FormularioProdutosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         configuraBotaoSalvar()
+        binding.activityFormularioProdutoImagem.setOnClickListener {
+            AlertDialog.Builder(this)
+                .setView(R.layout.formulario_imagem)
+                .setNegativeButton("Cancelar") { _, _ ->
+
+                }
+                .setPositiveButton("Confirmar") { _, _ ->
+
+                }
+
+                .show()
+        }
     }
 
     private fun configuraBotaoSalvar() {
@@ -32,10 +45,10 @@ class FormularioProdutosActivity : AppCompatActivity() {
     }
 
     private fun criaProduto(): Produto {
-        val campoNome = binding.actitivityFormularioProdutoNome
+        val campoNome = binding.activityFormularioProdutoNome
         val nome = campoNome.text.toString()
 
-        val campoDescricao = binding.actitivityFormularioProdutoDescricao
+        val campoDescricao = binding.activityFormularioProdutoDescricao
         val descricao = campoDescricao.text.toString()
 
         val campoValor = binding.actitivityFormularioProdutoValor
