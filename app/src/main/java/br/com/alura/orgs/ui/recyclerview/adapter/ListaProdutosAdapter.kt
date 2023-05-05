@@ -28,7 +28,7 @@ class ListaProdutosAdapter(
             val valor = binding.produtoItemValor
             val valorEmMoeda: String = formataParaMoedaBrasileira(produto.valor)
             valor.text = valorEmMoeda
-            binding.imageView.load("https://www.corinthians.com.br/assets/svg/corinthians.svg")
+            binding.imageView.load("https://images.pexels.com/photos/2288683/pexels-photo-2288683.jpeg")
         }
 
         private fun formataParaMoedaBrasileira(valor: BigDecimal): String {
